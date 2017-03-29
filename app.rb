@@ -1,6 +1,11 @@
 require 'sinatra'
 require 'faraday'
-require 'dotenv/load'
+
+begin
+  require 'dotenv/load'
+rescue LoadError
+  # do nothing
+end
 
 before do
   response.headers['Access-Control-Allow-Origin'] = ENV['ORIGIN']
