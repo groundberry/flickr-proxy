@@ -1,6 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    dotenv (2.2.0)
+    faraday (0.11.0)
+      multipart-post (>= 1.2, < 3)
+    multipart-post (2.0.0)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
@@ -14,6 +18,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv!
+  faraday!
   sinatra!
 
 BUNDLED WITH
